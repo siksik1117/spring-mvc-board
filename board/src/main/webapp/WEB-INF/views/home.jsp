@@ -10,6 +10,11 @@
 	Hello world!
 </h1>
 
-<p><a href = "/board/list">목록으로 이동</a></p>
+<p>
+	<a href = "/board/list">게시물 목록</a><br />
+	<a href = "/board/write">게시물 작성</a>
+	
+</p>
+
 </body>
 </html>
