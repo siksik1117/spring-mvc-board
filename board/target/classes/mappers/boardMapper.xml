@@ -13,5 +13,10 @@
 	<insert id="write" parameterType="com.board.domain.BoardVO">
 		insert into tbl_board(title,content,users) values (#{title}, #{content}, #{users})
 	</insert>
+	
+	<!-- 게시물 조회 -->
+	<select id="view" parameterType="int" resultType="com.board.domain.BoardVO">
+		select * from board.tbl_board where id = #{id}
+	</select>
 
 </mapper>
