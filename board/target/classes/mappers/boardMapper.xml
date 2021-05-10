@@ -23,5 +23,10 @@
 	<update id="modify" parameterType="com.board.domain.BoardVO">
 	update tbl_board set title=#{title}, content=#{content}, users=#{users} where id=#{id}
 	</update>
+	
+	<!-- 게시물 삭제 -->
+	<delete id="delete" parameterType="int">
+	delete from tbl_board where id = #{id}
+	</delete>
 
 </mapper>

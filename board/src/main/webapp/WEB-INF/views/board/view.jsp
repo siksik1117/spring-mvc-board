@@ -29,7 +29,7 @@
 	<hr />
 	
 	<div>
-	<a href = "/board/modify?id=${view.id}">게시물 수정</a>
+	<a href = "/board/modify?id=${view.id}">게시물 수정</a>, <a href="/board/delete?id=${view.id}">게시물 삭제</a>
 	</div>
 
 

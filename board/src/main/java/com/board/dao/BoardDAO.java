@@ -13,5 +13,7 @@ public interface BoardDAO {
  public BoardVO view(int id) throws Exception;
  
  public void modify(BoardVO vo) throws Exception;
+ 
+ public void delete(int id) throws Exception;
 
 }
