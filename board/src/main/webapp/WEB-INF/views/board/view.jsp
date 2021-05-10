@@ -8,18 +8,30 @@
 </head>
 <body>
 
-	<form method="post">
+<div id="nav">
+ <%@ include file="../include/nav.jsp" %>
+</div>
 
-	<label>제목</label>
-	${view.title}<br />
+
+	<h2>${view.title}</h2>
 	
-	<label>작성자</label>
-	${view.users}<br />
+	<hr />
 	
-	<label>내용</label><br />
-	${view.content}<br />
+	<div class = "writer">
+		<span>작성자 : </span>${view.users}
+	</div>
 	
-	</form>
+	<hr />
+	
+	<div class = "content">
+		${view.content}
+	</div>
+	<hr />
+	
+	<div>
+	<a href = "/board/modify?id=${view.id}">게시물 수정</a>
+	</div>
+
 
 </body>
 </html>

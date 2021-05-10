@@ -4,13 +4,14 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>게시물 작성</title>
+<title>게시물 수정</title>
 </head>
 <body>
 
 <div id="nav">
  <%@ include file="../include/nav.jsp" %>
 </div>
+
 
 <div class="container">
 		<div class="row">
@@ -25,17 +26,17 @@
 					</thead>
 					<tbody>
 						<tr>
-							<td><input type="text" class="form-control" placeholder="글 제목" name="title" maxlength="50"/></td>
+							<td><input type="text" class="form-control" placeholder="글 제목" name="title" maxlength="50" value="${view.title}"/></td>
 						</tr>
 						<tr>
-							<td><input type="text" class="form-control" placeholder="작성자" name="users" maxlength="10"/></td>
+							<td><input type="text" class="form-control" placeholder="작성자" name="users" maxlength="10" value="${view.users}"/></td>
 						</tr>
 						<tr>
-							<td><textarea class="form-control" placeholder="글 내용" name="content" maxlength="1024" style="height: 250px;"></textarea></td>
+							<td><textarea class="form-control" placeholder="글 내용" name="content" maxlength="1024" style="height: 250px;">${view.content}</textarea></td>
 						</tr>
 					</tbody>
 				</table>	
-				<input type="submit" class="btn btn-primary pull-right" value="글쓰기" />
+				<button type="submit" class="btn btn-primary pull-right">완료</button>
 			</form>
 		</div>
 	</div>

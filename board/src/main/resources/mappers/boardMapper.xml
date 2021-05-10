@@ -18,5 +18,10 @@
 	<select id="view" parameterType="int" resultType="com.board.domain.BoardVO">
 		select * from board.tbl_board where id = #{id}
 	</select>
+	
+	<!-- 게시물 수정 -->
+	<update id="modify" parameterType="com.board.domain.BoardVO">
+	update tbl_board set title=#{title}, content=#{content}, users=#{users} where id=#{id}
+	</update>
 
 </mapper>
