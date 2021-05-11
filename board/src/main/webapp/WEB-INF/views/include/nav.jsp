@@ -14,6 +14,9 @@
                     <a id="mainmenu">SPRING게시판</a>
                   </li>
                   <li>
+                      <a id="joinmenu" href="/board/listPage?num=1">게시물 목록(페이징)</a>
+                  </li>
+                  <li>
                       <a id="joinmenu" href="/board/list">게시물 목록</a>
                   </li>
                   <li>

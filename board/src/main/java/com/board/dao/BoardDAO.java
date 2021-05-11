@@ -15,5 +15,10 @@ public interface BoardDAO {
  public void modify(BoardVO vo) throws Exception;
  
  public void delete(int id) throws Exception;
+ 
+ public int count() throws Exception;
+ 
+ public List<BoardVO> listPage(int displayPost, int postNum) throws Exception;
+ 
 
 }

@@ -43,8 +43,21 @@ public class BoardServiceImpl implements BoardService {
 
 	@Override
 	public void delete(int id) throws Exception {
+		
 		dao.delete(id);
 		
+	}
+
+	@Override
+	public int count() throws Exception {
+
+		return dao.count();
+	}
+
+	@Override
+	public List<BoardVO> listPage(int displayPost, int postNum) throws Exception {
+		
+		return dao.listPage(displayPost, postNum);
 	}
 
 }

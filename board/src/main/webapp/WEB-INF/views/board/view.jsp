@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <title>게시물 조회</title>
 </head>
-<body>
+<body style="margin-left:30px">
 
 <div id="nav">
  <%@ include file="../include/nav.jsp" %>
@@ -29,7 +29,8 @@
 	<hr />
 	
 	<div>
-	<a href = "/board/modify?id=${view.id}">게시물 수정</a>, <a href="/board/delete?id=${view.id}">게시물 삭제</a>
+	<button type="button" onClick="location.href='/board/modify?id=${view.id}'">수정</button>
+	<button type="button" onClick="location.href='/board/delete?id=${view.id}'">삭제</button>
 	</div>
 
 

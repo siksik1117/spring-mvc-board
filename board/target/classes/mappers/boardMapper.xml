@@ -28,5 +28,15 @@
 	<delete id="delete" parameterType="int">
 	delete from tbl_board where id = #{id}
 	</delete>
+	
+	<!-- 게시물 총 개수 -->
+	<select id="count" resultType="int">
+	select count(id) from tbl_board
+	</select>
+	
+	<!-- 게시물 목록 + 페이징 -->
+	<select id="listPage" parameterType="hashMap" resultType="com.board.domain.BoardVO">
+	select * from tbl_board order by id desc limit #{displayPost}, #{postNum}
+	</select>
 
 </mapper>
