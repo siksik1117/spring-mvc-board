@@ -38,5 +38,47 @@
 	<select id="listPage" parameterType="hashMap" resultType="com.board.domain.BoardVO">
 	select * from tbl_board order by id desc limit #{displayPost}, #{postNum}
 	</select>
+	
+	<!-- 게시물 목록 + 페이징 + 검색 -->
+	<select id="listPageSearch" parameterType="hashMap" resultType="com.board.domain.BoardVO">
+	select * from tbl_board
+	
+	<if test='searchType.equals("title")'>
+		WHERE title LIKE concat('%', #{keyword}, '%')
+	</if>
+	<if test='searchType.equals("content")'>
+		WHERE content LIKE concat('%', #{keyword}, '%')
+	</if>
+	<if test='searchType.equals("title_content")'>
+		WHERE title like concat('%', #{keyword}, '%')
+			or content LIKE concat('%', #{keyword}, '%')
+	</if>
+	<if test='searchType.equals("users")'>
+		WHERE users LIKE concat('%', #{keyword}, '%')
+	</if>
+	
+	order by id desc limit #{displayPost}, #{postNum}
+	
+	</select>
+	
+	<!-- 게시물 총 갯수 + 검색 적용 -->
+	<select id="searchCount" parameterType="hashMap" resultType="int">
+		select count(id) from tbl_board
+		
+		<if test='searchType.equals("title")'>
+			WHERE title LIKE concat('%', #{keyword}, '%')
+		</if>
+		<if test='searchType.equals("content")'>
+			WHERE content LIKE concat('%', #{keyword}, '%')
+		</if>
+		<if test='searchType.equals("title_content")'>
+			WHERE title like concat('%', #{keyword}, '%')
+				or content LIKE concat('%', #{keyword}, '%')
+		</if>
+		<if test='searchType.equals("users")'>
+			WHERE users LIKE concat('%', #{keyword}, '%')
+		</if>
+		
+	</select>
 
 </mapper>
