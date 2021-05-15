@@ -28,7 +28,6 @@
 		   <th style="background-color:#eeeeee; text-align:center">제목</th>
 		   <th style="background-color:#eeeeee; text-align:center">작성자</th>
 		   <th style="background-color:#eeeeee; text-align:center">작성일</th>
-		   <th style="background-color:#eeeeee; text-align:center">조회수</th>
 		  </tr>
 		 </thead>
 		  
@@ -39,7 +38,6 @@
 			  <td><a href="/board/view?id=${list.id}">${list.title}</a></td>
 			  <td>${list.users}</td>
 			  <td><fmt:formatDate value="${list.reg_date}" pattern="yyyy-MM-dd"/></td>
-			  <td>${list.view_count}</td>
 			 </tr>
 		 </c:forEach>
 		 
