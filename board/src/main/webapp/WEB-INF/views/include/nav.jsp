@@ -86,10 +86,11 @@ a:hover { color: blue; text-decoration: none;}
 	        <li id="lis">
 	             <a id="b"" href="/board/listPage?num=1">게시물 목록(페이징)</a>
 	        </li>
+	       	-->
 	        <li id="lis">
 	             <a id="b" href="/board/list">게시물 목록</a>
 	        </li> 
-	        -->
+
 	        <li id="lis">
 	             <a id="b" href="/board/write">게시물 작성</a>
 	        </li>				  

@@ -6,7 +6,7 @@
 
 	<!-- 게시물 목록 -->
 	<select id="list" resultType="com.board.domain.BoardVO">
-		select * from board.tbl_board
+		select * from board.tbl_board order by id desc
 	</select>
 	
 	<!-- 게시물 작성 -->
