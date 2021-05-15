@@ -36,11 +36,11 @@ DB : MariaDB<br />
 <img width="960" alt="화면 캡처 2021-05-15 192919" src="https://user-images.githubusercontent.com/59276876/118357666-4d456180-b5b6-11eb-9e64-2cfda4a995c8.png">
 <br />
 
-###검색 기능
+### 검색 기능
 <img width="960" alt="화면 캡처 2021-05-15 192959" src="https://user-images.githubusercontent.com/59276876/118357684-60583180-b5b6-11eb-923c-9d60ec2ef651.png">
 <img width="960" alt="화면 캡처 2021-05-15 193010" src="https://user-images.githubusercontent.com/59276876/118357686-61895e80-b5b6-11eb-9dfb-3baddcb4c30f.png">
 <br />
 
-###페이징 처리
+### 페이징 처리
 <img width="960" alt="화면 캡처 2021-05-15 193027" src="https://user-images.githubusercontent.com/59276876/118357729-8251b400-b5b6-11eb-972e-2de4dafdfbe4.png">
 <img width="960" alt="화면 캡처 2021-05-15 193039" src="https://user-images.githubusercontent.com/59276876/118357730-8382e100-b5b6-11eb-9843-61060e7474da.png">
