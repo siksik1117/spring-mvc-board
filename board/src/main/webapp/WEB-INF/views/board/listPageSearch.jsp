@@ -21,7 +21,7 @@
   	<div class="row">
 
 	<table class = "table table-striped" style="width:60%; margin:auto; text-align:center; border:1px solid #dddddd">
-	<caption>게시물 목록</caption>
+	<h2 style="text-align:center;">게시물 목록</h2>
 		<thead>
 		  <tr>
 		   <th style="background-color:#eeeeee; text-align:center">번호</th>
@@ -70,7 +70,8 @@
 		<c:if test="${page.next}">
 			 <span>[ <a href="/board/listPageSearch?num=${page.endPageNum + 1}${page.searchTypeKeyword}">다음</a> ]</span>
 		</c:if>
-		
+		<br />
+		<br />
 		<div>
 		<select name="searchType">
 		    <option value="title" <c:if test="${page.searchType eq 'title'}">selected</c:if>>제목</option>

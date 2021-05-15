@@ -12,6 +12,7 @@
  <%@ include file="../include/nav.jsp" %>
 </div>
 
+<br />
 <div class="container">
 		<div class="row">
 			<form method="post">

@@ -12,7 +12,7 @@
 	<!-- 댓글 작성 -->
 	<insert id="replyWrite" parameterType="com.board.domain.ReplyVO">
 		insert into tbl_reply(id, writer, content, regDate)
-			value(#{id}, #{writer}, #{content}, #{regDate})
+			values (#{id}, #{writer}, #{content}, #{regDate})
 	</insert>
 		
 	<!-- 댓글 수정 -->

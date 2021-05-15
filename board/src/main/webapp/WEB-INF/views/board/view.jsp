@@ -7,11 +7,13 @@
 <meta charset="UTF-8">
 <title>게시물 조회</title>
 </head>
-<body style="margin-left:30px">
 
 <div id="nav">
  <%@ include file="../include/nav.jsp" %>
 </div>
+
+
+<div style="margin-left:30px">
 
 
 	<h2>${view.title}</h2>
@@ -65,7 +67,7 @@
 	</form>
 	
 	</div>
-
+</div>
 
 </body>
 </html>
