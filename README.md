@@ -7,6 +7,8 @@ Java : jdk-11.0.11<br />
 Tomcat : Tomcat 8.5.64<br />
 DB : MariaDB<br />
 
+##### 기초설정은 블로그에 정리를 해놓았다.https://siksik1117.tistory.com/
+
 ![ezgif com-gif-maker](https://user-images.githubusercontent.com/59276876/118359083-c8117b00-b5bc-11eb-8e4e-87424349a79d.gif)
 
 ### 메인 화면
