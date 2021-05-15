@@ -7,6 +7,8 @@ Java : jdk-11.0.11<br />
 Tomcat : Tomcat 8.5.64<br />
 DB : MariaDB<br />
 
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/59276876/118359083-c8117b00-b5bc-11eb-8e4e-87424349a79d.gif)
+
 ### 메인 화면
 <img width="960" alt="화면 캡처 2021-05-15 191000" src="https://user-images.githubusercontent.com/59276876/118357490-6699de00-b5b5-11eb-84c2-ebae1c8264a9.png">
 <br />
@@ -21,6 +23,10 @@ DB : MariaDB<br />
 
 ### 로그인 후 회원용 화면
 <img width="960" alt="화면 캡처 2021-05-15 191059" src="https://user-images.githubusercontent.com/59276876/118357601-ede75180-b5b5-11eb-9f44-77bccf9a999c.png">
+<br />
+
+### BCrypt를 통한 암호화
+<img width="702" alt="화면 캡처 2021-05-15 202020" src="https://user-images.githubusercontent.com/59276876/118358734-2a697c00-b5bb-11eb-843b-e960d4fab5cf.png">
 <br />
 
 ### 게시물 작성
